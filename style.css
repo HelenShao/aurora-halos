@@ -53,4 +53,13 @@ dd { margin: 0; font: 14px/1.5 var(--mono); font-variant-numeric: tabular-nums; 
 .plot img { width: 100%; max-width: 100%; border-radius: 4px; border: 1px solid var(--line); background: #000; }
 footer { border-top: 1px solid var(--line); padding-top: 16px; font-size: 13px; color: var(--mute); }
 footer p { max-width: none; }
+.switch { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; }
+.switch .lab { font: 500 11.5px/1 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--mute); }
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 4px; overflow: hidden; }
+.seg button { font: 500 13px/1 var(--mono); color: var(--mute); background: var(--raise); border: 0;
+  padding: 9px 14px; cursor: pointer; }
+.seg button + button { border-left: 1px solid var(--line); }
+.seg button[aria-pressed="true"] { color: var(--bg); background: var(--accent); }
+.seg button:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+.switch .how { font-size: 13.5px; color: var(--mute); }
 @media (prefers-reduced-motion: reduce) { .card img { transition: none; } }
