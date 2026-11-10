@@ -15,8 +15,8 @@
 
 <nav class="top"><a href="../index.html">&larr; All halos</a><span><a href="r001_h4455065.html">&lsaquo; previous</a>&ensp;<a href="r003_h2372071.html">next &rsaquo;</a></span></nav>
 <header><div class="eyebrow">Rank #002 at z = 1.91 &middot; AbacusAurora rockV2 c000 ph390</div><h1>Halo 379500</h1><p class="lede">At z = 1.91 this is the #2 most massive host, with M<sub>vir</sub> = 9.29&thinsp;&times;&thinsp;10<sup>13</sup> M<sub>&#9737;</sub>/h and R<sub>vir</sub> = 1109 kpc/h, holding 1,170 MAPs. It grows 135&times; between z = 5 and 0.22 and reaches half its final mass by z = 0.78. Its largest growth spurt since z = 2 is &times;1.39 in 0.37 Gyr (z = 1.38 &rarr; 1.26). The 15 &times; 15 &times; 5 h<sup>&minus;1</sup>Mpc slab around it is 3.4&times; the cosmic mean density (the densest surroundings of the 6 halos here), with 11 other hosts above 10<sup>12</sup> M<sub>&#9737;</sub>/h within 5 h<sup>&minus;1</sup>Mpc. The central galaxy changes identity 2 times (marked in the plots).</p></header>
-<div class="switch"><span class="lab" id="cs-lab">Colour scheme</span><div class="seg" role="group" aria-labelledby="cs-lab"><button type="button" data-v="deepspace" data-suf="" data-how="deep-space blue dark matter, MAPs as small galaxy light profiles" aria-pressed="true">Deep space</button><button type="button" data-v="red" data-suf="_red" data-how="red dark matter, MAPs as small galaxy light profiles" aria-pressed="false">Red</button><button type="button" data-v="inferno" data-suf="_inferno" data-how="inferno dark matter, MAPs as soft glows" aria-pressed="false">Inferno</button></div><span class="how" id="cs-how">Deep-space blue dark matter, maps as small galaxy light profiles.</span></div>
-<figure><video data-base="../media/r002_h379500/central" src="../media/r002_h379500/central.mp4" poster="../media/r002_h379500/central_poster.jpg" controls muted loop playsinline preload="metadata" aria-label="Central galaxy of halo 379500, z = 5 to 0.22"></video><figcaption><b>Central galaxy.</b> The camera circles the halo&rsquo;s main progenitor, always pointing at its centre. The cyan ring marks the central galaxy (the most massive MAP within 0.25 R<sub>vir</sub>). Panels on the right fill in as the movie plays: central and halo mass, speeds, radial velocity, the central&rsquo;s offset from the halo centre, and the number of MAPs in R<sub>vir</sub>.</figcaption></figure>
+<div class="switch"><span class="lab" id="cs-lab">Colour scheme</span><div class="seg" role="group" aria-labelledby="cs-lab"><button type="button" data-v="deepspace" data-root="../media/" data-suf="" data-how="deep-space blue dark matter, MAPs as small galaxy light profiles" aria-pressed="true">Deep space</button><button type="button" data-v="red" data-root="https://helenshao.github.io/aurora-halos-red/media/" data-suf="_red" data-how="red dark matter, MAPs as small galaxy light profiles" aria-pressed="false">Red</button><button type="button" data-v="inferno" data-root="https://helenshao.github.io/aurora-halos-inferno/media/" data-suf="_inferno" data-how="inferno dark matter, MAPs as soft glows" aria-pressed="false">Inferno</button></div><span class="how" id="cs-how">Deep-space blue dark matter, maps as small galaxy light profiles.</span></div>
+<figure><video data-path="r002_h379500/central" src="../media/r002_h379500/central.mp4" poster="../media/r002_h379500/central_poster.jpg" controls muted loop playsinline preload="metadata" aria-label="Central galaxy of halo 379500, z = 5 to 0.22"></video><figcaption><b>Central galaxy.</b> The camera circles the halo&rsquo;s main progenitor, always pointing at its centre. The cyan ring marks the central galaxy (the most massive MAP within 0.25 R<sub>vir</sub>). Panels on the right fill in as the movie plays: central and halo mass, speeds, radial velocity, the central&rsquo;s offset from the halo centre, and the number of MAPs in R<sub>vir</sub>.</figcaption></figure>
 <div class="facts">
 <section><h2>At z = 1.91</h2><dl><dt>M<sub>vir</sub></dt><dd>9.29&thinsp;&times;&thinsp;10<sup>13</sup> M<sub>&#9737;</sub>/h</dd><dt>R<sub>vir</sub></dt><dd>1109 kpc/h</dd><dt>V<sub>max</sub></dt><dd>1160 km/s</dd><dt>Position</dt><dd>(77.5, 2.6, 14.1) h<sup>&minus;1</sup>Mpc</dd><dt>MAPs in R<sub>vir</sub></dt><dd>1,170</dd><dt>median MAP P<sub>ram</sub></dt><dd>6.68&thinsp;&times;&thinsp;10<sup>8</sup> &rho;&#772;(km/s)<sup>2</sup></dd></dl></section>
 <section><h2>Growth, z = 5 &rarr; 0.22</h2><dl><dt>M<sub>vir</sub>(z = 5)</dt><dd>3.43&thinsp;&times;&thinsp;10<sup>12</sup> M<sub>&#9737;</sub>/h</dd><dt>M<sub>vir</sub>(z = 0.22)</dt><dd>4.64&thinsp;&times;&thinsp;10<sup>14</sup> M<sub>&#9737;</sub>/h</dd><dt>half-mass redshift</dt><dd>0.78</dd><dt>largest spurt since z = 2</dt><dd>&times;1.39 in 0.37 Gyr (z = 1.38 &rarr; 1.26)</dd><dt>central mass</dt><dd>1.70&thinsp;&times;&thinsp;10<sup>12</sup> &rarr; 7.14&thinsp;&times;&thinsp;10<sup>13</sup> M<sub>&#9737;</sub>/h</dd><dt>central offset</dt><dd>median 20, max 89 kpc/h</dd><dt>peak central speed</dt><dd>1230 km/s at z &asymp; 0.63</dd><dt>central swaps</dt><dd>2</dd><dt>MAPs in R<sub>vir</sub>, z = 0.22</dt><dd>4,143</dd></dl></section>
@@ -27,17 +27,18 @@
 (function () {
   var KEY = 'aurora-halo-colour';
   var btns = Array.prototype.slice.call(document.querySelectorAll('.seg button'));
-  var vids = Array.prototype.slice.call(document.querySelectorAll('video[data-base]'));
+  var vids = Array.prototype.slice.call(document.querySelectorAll('video[data-path]'));
   var how = document.getElementById('cs-how');
   function apply(b, remember) {
     if (b.getAttribute('aria-pressed') === 'true' && !remember) { return; }
     btns.forEach(function (x) { x.setAttribute('aria-pressed', String(x === b)); });
     var h = b.dataset.how; how.textContent = h.charAt(0).toUpperCase() + h.slice(1) + '.';
     vids.forEach(function (v) {
-      var src = v.dataset.base + b.dataset.suf + '.mp4';
+      var stem = b.dataset.root + v.dataset.path + b.dataset.suf;
+      var src = stem + '.mp4';
       if (v.getAttribute('src') === src) { return; }
       var t = v.currentTime, playing = !v.paused;
-      v.poster = v.dataset.base + b.dataset.suf + '_poster.jpg';
+      v.poster = stem + '_poster.jpg';
       v.src = src;
       v.addEventListener('loadedmetadata', function () {
         try { v.currentTime = Math.min(t, v.duration || t); } catch (e) {}
